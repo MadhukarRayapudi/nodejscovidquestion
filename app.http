@@ -1,0 +1,62 @@
+post http://localhost:3000/login/
+content-type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3000/states/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+###
+
+GET http://localhost:300/states/1/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+###
+
+POST http://localhost:3000/districts/
+content-type: application/json 
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+{
+  "districtName": "Khammam",
+  "stateId": 31,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000/districts/1/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+###
+
+DELETE http://localhost:3000/districts/2/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+###
+
+PUT http://localhost:3000/districts/1/
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000states/1/stats/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzE0NTgxMDQzfQ.YJfkUsM45TwyKO_NE6Vf66XHk7zQx04nYniR_wQkMeI
